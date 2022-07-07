@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias Em HTML5</title>
+</head>
+<body>
+    <h1>Imagnes dinamicas</h1>
+    <p>Site teste para imagnes de varios tamanho( celular, tablet e PC)</p>
+
+    <picture>
+        <source media="(max-width: 735px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1035px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem G">
+    </picture>
+    <br>
+    <picture>
+        <source media="(min-width: 1035px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 735px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="imagem P">
+    </picture>
+    <h1>Reproduzindo audio em HTML5</h1>
+    <audio src="midia/thugdub.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG-->
+    <h2>Outra maneira</h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/thugdub.mp3" type="audio/mpeg">
+        <source src="midia/thugdub.ogg" type="audio/ogg">
+        <source src="midia/thugdub.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o audio. <br> <a href="midia/thugdub.mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+</body>
+</html>

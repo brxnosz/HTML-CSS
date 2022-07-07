@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .barrinha-menu {
+  height: 4px;
+  width: 50px;
+  background-color: #000;
+  display: block;
+  margin: 4px;
+  transition: width 1s ease, margin-left 1s ease;
+}
+div:hover .barrinha-menu:nth-child(2) {
+  margin-left: 15px;
+}
+
+div:hover .barrinha-menu {
+  width: 35px;
+  transition: width 1s ease, margin-left 1s ease;
+}
+</style>
+<body>
+    <div>
+        <span class="barrinha-menu"></span>
+        <span class="barrinha-menu"></span>
+        <span class="barrinha-menu"></span>
+    </div>
+</body>
+</html>
